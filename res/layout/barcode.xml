@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_others" 
+    android:baselineAligned="false" 
+    android:orientation="vertical" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+	<LinearLayout
+	  		android:orientation="horizontal"
+	 		android:layout_height="wrap_content"
+	 		android:layout_width="fill_parent" 
+			android:layout_gravity="center_horizontal"
+			android:paddingTop="75dip"
+			android:paddingLeft="10dip"
+			>
+			<TextView 
+			android:text="Barcode: " 
+			android:id="@+id/textView1" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom"
+			android:textStyle="bold"
+			android:textSize="6pt"
+			android:textColor="@color/col1"
+			></TextView>
+			<TextView 
+			android:text="" 
+			android:hint="Scan Barcode"
+			android:id="@+id/barTxt" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_gravity="bottom"
+			android:textSize="6pt"
+			android:textColor="@color/col1"
+			></TextView>
+			<LinearLayout
+	  		android:orientation="horizontal"
+	 		android:layout_height="wrap_content"
+	 		android:layout_width="wrap_content" 
+			
+			android:paddingRight="10dip"
+			android:paddingLeft="80dip"
+			>
+			<ImageButton 
+				    android:layout_height="wrap_content" 
+				    android:src="@drawable/scanner" 
+				    android:layout_width="wrap_content" 
+				    android:id="@+id/scan"
+				    android:layout_gravity="right"
+				    android:clickable="false"></ImageButton>
+			</LinearLayout>	    
+		<!-- <AutoCompleteTextView android:id="@+id/autoCompleteTextView1" android:layout_height="wrap_content" android:text="AutoCompleteTextView" android:layout_width="match_parent"></AutoCompleteTextView> -->
+	</LinearLayout>
+	<!-- <LinearLayout
+	  		android:orientation="horizontal"
+	 		android:layout_height="wrap_content"
+	 		android:layout_width="fill_parent" 
+			
+			android:paddingTop="10dip"
+			android:paddingLeft="10dip"
+			>
+			<TextView 
+			android:text="Remarks: " 
+			android:id="@+id/textView1" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:textStyle="bold"
+			android:textSize="6pt"
+			android:textColor="@color/col1"
+			android:layout_gravity="bottom"
+			></TextView>
+			
+			
+	</LinearLayout> -->
+	<LinearLayout
+	  		android:orientation="horizontal"
+	 		android:layout_height="wrap_content"
+	 		android:layout_width="fill_parent" 
+			
+			android:paddingTop="10dip"
+			
+			android:paddingLeft="10dip"
+			android:paddingRight="10dip"
+			>
+	
+	    <EditText
+	    android:paddingTop="10dip" 
+	    android:layout_width="fill_parent"
+	    android:hint="Remarks" 
+	    android:text="" 
+	    android:layout_height="fill_parent" 
+	    android:id="@+id/barRemarks"
+	    
+	    ></EditText>
+	</LinearLayout>    
+	<LinearLayout
+  		android:orientation="horizontal"
+ 		android:layout_height="wrap_content"
+ 		android:layout_width="fill_parent" 
+		android:paddingTop="50dip"
+		
+		android:paddingLeft="10dip"
+		android:paddingRight="10dip">
+	    <Button 
+	    android:text="Add" 
+	    android:id="@+id/barAdd" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+		android:layout_weight="1"
+	    ></Button>
+
+ 		<Button 
+	    android:text="Cancel" 
+	    android:id="@+id/barCancel" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+		android:layout_weight="1"
+	    ></Button>
+	</LinearLayout>
+</LinearLayout>

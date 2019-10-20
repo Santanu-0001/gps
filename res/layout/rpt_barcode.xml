@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mobilebg2"
+    >
+
+<LinearLayout
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:background="@drawable/heading_top"
+android:clipToPadding="true"
+android:clipChildren="true"
+
+>
+    
+<TextView
+	android:text="Material List"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:textColor="#dde8fe"
+	android:textStyle="bold"
+	android:textSize="10pt"
+	android:id="@+id/rptText"
+	android:layout_gravity="center_vertical"
+	android:padding="10dp"
+	></TextView>
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="right"
+    >
+	
+		<ImageButton 
+		android:layout_width="wrap_content" 
+		android:background="@null" 
+		android:src="@drawable/rpt_add_bar" 
+		android:layout_height="wrap_content" 
+		android:id="@+id/rptAddBar"
+		android:paddingRight="10dp"
+		></ImageButton>
+	</LinearLayout>
+</LinearLayout>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/mobilebg2"
+    >
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="280dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/rptList"
+        
+        >
+        <ListView
+	            android:id="@+id/listRptBar"
+	            android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:background="#00000000"
+				android:cacheColorHint="#00000000"
+				android:divider="@null"
+				
+				></ListView>
+	    </LinearLayout>     
+		
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_start"
+    >
+    
+
+
+		 <RelativeLayout 
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:paddingTop="100dip" 
+			android:paddingLeft="100dip"
+			
+			>
+
+			<!-- android:paddingTop="150dip"/"100dip" -->
+		    <ImageButton 
+			    android:id="@+id/imageButton2" 
+			    android:layout_width="wrap_content" 
+			    android:src="@drawable/message" 
+			    android:layout_height="wrap_content"
+			    android:onClick="fn2" 
+			    android:background="@null"
+			    
+			 ></ImageButton>
+
+		    <TextView 
+					android:text="Task" 
+					android:id="@+id/textView2" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textSize="6pt"
+					android:textStyle="bold"
+					android:textColor="@color/black"
+					android:layout_below="@+id/imageButton2"	
+					android:paddingLeft="15dip"
+					android:paddingBottom="15dip"
+					></TextView>
+			<ImageButton 
+			    android:id="@+id/imageButton3" 
+			    android:layout_width="wrap_content" 
+			    android:src="@drawable/report" 
+			    android:layout_height="wrap_content"
+			    android:onClick="fn3" 
+			    android:layout_marginLeft="50dip"
+			    android:background="@null"
+				android:layout_toRightOf="@+id/imageButton2"	
+			    
+			></ImageButton>
+			<TextView 
+					android:text="Report" 
+					android:id="@+id/textView3" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:textSize="6pt"
+					android:textStyle="bold"
+					android:textColor="@color/black"
+					android:layout_below="@+id/imageButton3"
+					android:layout_alignLeft="@+id/imageButton3"
+					android:paddingLeft="10dip"
+					android:paddingBottom="15dip"
+					></TextView>
+		    <ImageButton 
+			    android:id="@+id/imageButton5" 
+			    android:layout_width="wrap_content" 
+			    android:src="@drawable/chake_in_out" 
+			    android:layout_height="wrap_content"
+			    android:onClick="fn5" 
+			    android:background="@null"
+			    android:layout_below="@+id/textView2"
+				android:layout_alignLeft="@+id/textView2"
+				
+			    ></ImageButton>
+	        <ImageButton 
+			    android:id="@+id/imageButton4" 
+			    android:layout_width="wrap_content" 
+			    android:src="@drawable/delete" 
+			    android:layout_height="wrap_content"
+			    android:onClick="fn1" 
+			    
+			    android:background="@null"
+			    android:layout_below="@+id/textView3"
+				android:layout_alignLeft="@+id/textView3"
+			    ></ImageButton>
+			<TextView 
+				android:text="IN/OUT" 
+				android:id="@+id/textView4" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:textSize="6pt"
+				android:textStyle="bold"
+				android:paddingLeft="10dip"
+				android:textColor="@color/black"
+			    android:layout_below="@+id/imageButton5"
+				android:layout_alignLeft="@+id/imageButton5"
+				android:paddingBottom="15dip"
+				></TextView>
+			<TextView 
+				android:text="Exit" 
+				android:id="@+id/textView5" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:textSize="6pt"
+				android:textStyle="bold"
+				android:paddingLeft="20dip"
+				android:textColor="@color/black"
+			    android:layout_below="@+id/imageButton4"
+				android:layout_alignLeft="@+id/imageButton4"
+				android:paddingBottom="15dip"
+	
+				></TextView>
+		    <ImageButton 
+			    android:id="@+id/imageButton6" 
+			    android:layout_width="wrap_content" 
+			    android:src="@drawable/travel" 
+			    android:layout_height="wrap_content"
+			    android:onClick="fn7" 
+			    android:background="@null"
+			    android:layout_below="@+id/textView4"
+				android:layout_alignLeft="@+id/textView4"
+			    ></ImageButton>
+			 <ImageButton 
+			    android:id="@+id/imageButton1" 
+			    android:layout_width="wrap_content" 
+			    android:src="@drawable/survey" 
+			    android:layout_height="wrap_content"
+			    android:onClick="fn8" 
+			    android:background="@null"
+			    
+			    android:layout_below="@+id/textView5"
+				android:layout_alignLeft="@+id/textView5"
+			    ></ImageButton>	
+			<TextView 
+				android:text="Travel" 
+				android:id="@+id/textView6" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:textSize="6pt"
+				android:textStyle="bold"
+				android:paddingLeft="8dip"
+				android:textColor="@color/black"
+			    android:layout_below="@+id/imageButton6"
+				android:layout_alignLeft="@+id/imageButton6"
+				></TextView>
+				
+				<TextView 
+				android:text="Survey" 
+				android:id="@+id/textView7" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:textSize="6pt"
+				android:textStyle="bold"
+				android:paddingLeft="8dip"
+				android:textColor="@color/black"
+			    android:layout_below="@+id/imageButton1"
+				android:layout_alignLeft="@+id/imageButton1"
+				></TextView>
+					
+		</RelativeLayout>
+
+
+	
+
+<TextView 
+			android:text="IP" 
+			android:id="@+id/textIP" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:textSize="6pt"
+			android:textStyle="bold"
+			android:paddingTop="20dip"
+			android:paddingLeft="10dip"
+			android:textColor="@color/black"
+			></TextView>
+
+</LinearLayout>

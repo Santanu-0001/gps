@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_others" android:baselineAligned="false" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    
+		<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="left"
+		android:paddingTop="20dip"
+		android:paddingLeft="10dip"
+		android:paddingRight="100dip"
+		>
+			<TextView
+			android:id="@+id/srvLab1"
+			android:text="JobID:"
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:textColor="@color/black"
+			></TextView>
+			<Spinner 
+			android:id="@+id/srvJob"  
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent"
+			></Spinner>    
+    	</LinearLayout>
+    	
+		<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="100dip"
+		android:layout_gravity="left"
+		android:paddingTop="10dip"
+		android:paddingLeft="10dip"
+		android:paddingRight="10dip"
+		>
+			<TextView
+			android:id="@+id/srvLab2"
+			android:hint="Job Details"
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"
+			
+			android:textColor="@color/black"
+			android:textColorHint="@color/blue"
+			></TextView>
+    	</LinearLayout>
+    	
+    	
+		<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:paddingTop="10dip"
+		android:paddingLeft="20dip"
+		android:paddingRight="10dip"
+		>
+			<EditText
+			android:id="@+id/srvPtz"
+			android:hint="PTZ ..."
+			android:layout_height="wrap_content" 
+			android:layout_width="100dip"
+			android:layout_gravity="center_horizontal"
+			
+			android:textColor="@color/black"
+			android:inputType="numberDecimal"
+			></EditText>
+			<TextView
+			android:text="   + "
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:textColor="@color/black"
+			android:textColorHint="@color/blue"
+			></TextView>
+
+		<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		
+		android:paddingLeft="10dip"
+		
+		>
+			<EditText
+			android:id="@+id/srvFixed"
+			android:hint="Fixed ..."
+			android:layout_height="wrap_content" 
+			android:layout_width="100dip"
+			android:layout_gravity="center_vertical"
+			
+			android:textColor="@color/black"
+			android:inputType="numberDecimal"
+			></EditText>
+			<TextView
+			android:text=" = "
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:textColor="@color/black"
+			android:textColorHint="@color/blue"
+			></TextView>
+			<TextView
+			android:id="@+id/srvLab2"
+			android:hint=" Total"
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:textColor="@color/black"
+			android:textColorHint="@color/blue"
+			></TextView>
+			
+    	</LinearLayout>
+    	</LinearLayout>
+    	
+		<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		
+		android:paddingTop="5dip"
+		android:paddingLeft="50dip"
+		
+		>
+			<TextView
+			android:text="Zone : "
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:textColor="@color/black"
+			android:textColorHint="@color/blue"
+			></TextView>
+			<EditText
+			android:id="@+id/srvFixed"
+			
+			android:layout_height="wrap_content" 
+			android:layout_width="100dip"
+			android:layout_gravity="center_vertical"
+			
+			android:textColor="@color/black"
+			android:inputType="numberDecimal"
+			></EditText>
+			
+    	</LinearLayout>	
+    	
+		<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="right"
+		android:paddingTop="5dip"
+		android:paddingLeft="10dip"
+		
+		>
+			<ImageButton 
+			    android:id="@+id/imageButton3" 
+			    android:layout_width="wrap_content" 
+			    android:src="@drawable/right" 
+			    android:layout_height="wrap_content"
+			    android:onClick="shownext" 
+			    
+			    
+			></ImageButton>
+			    
+		</LinearLayout>
+			
+		<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		
+		android:paddingTop="10dip"
+		android:paddingLeft="10dip"
+		android:paddingRight="10dip"
+		android:paddingBottom="10dip"
+		>
+	    <ListView 
+	    android:id="@android:id/list" 
+	    android:background="@android:color/transparent" 
+	    
+	    android:cacheColorHint="#00000000"
+	    android:clickable="true"
+	    android:textColor="@color/col1"
+	    android:layout_height="wrap_content" 
+	    android:layout_width="match_parent">
+	    </ListView>
+		
+		</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_others"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/app_desc"
+    android:layout_gravity="center"
+    android:paddingTop="5dip"
+    android:paddingLeft="20dip"
+    android:textColor="@color/col1"
+    android:textStyle="bold"
+    android:textScaleX="1.5" 
+    />
+	<LinearLayout 
+		android:orientation="horizontal"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_gravity="left"
+		android:paddingTop="10dip"
+		android:paddingLeft="10dip"
+		>
+	<TextView 
+		android:layout_width="wrap_content" 
+		android:textScaleX="1.5" 
+		android:paddingRight="50dip" 
+		android:textColor="@color/col1" 
+		android:textStyle="bold" 
+		android:layout_height="wrap_content" 
+		android:text="Job ID:" 
+		android:layout_gravity="center_vertical"/>
+	
+	<Spinner android:id="@+id/spinner1"  android:layout_height="wrap_content" android:layout_width="match_parent"></Spinner>
+	</LinearLayout>
+	
+	<LinearLayout
+	android:orientation="horizontal"
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:paddingTop="10dip"
+	android:layout_gravity="center_horizontal"
+	android:paddingLeft="10dip"
+	>
+	<TextView android:layout_width="wrap_content" android:textScaleX="1.5" android:paddingRight="50dip" android:textColor="@color/col1" android:textStyle="bold"  android:layout_height="wrap_content" android:text="Date : " android:layout_gravity="center_vertical"/>
+	<TextView android:id="@+id/TextView1"  android:textColor="@color/col1"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="xxxx" android:layout_gravity="center_vertical"/>
+	</LinearLayout>
+	
+	<LinearLayout
+	android:orientation="horizontal"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	android:paddingTop="10dip"
+	android:layout_gravity="left"
+	android:paddingLeft="10dip"
+	>
+	<TextView 
+	android:layout_width="wrap_content" 
+	android:textColor="@color/col1" 
+	android:textStyle="bold"  
+	android:textScaleX="1.5"
+	android:layout_height="wrap_content" 
+	android:text="Description:" 
+	android:layout_gravity="center_vertical"/>
+	
+	</LinearLayout>
+	<LinearLayout
+	android:orientation="horizontal"
+	android:layout_height="wrap_content"
+	android:layout_width="wrap_content"
+	android:paddingTop="5dip"
+	android:paddingLeft="20dip"
+	android:layout_gravity="left"
+	>
+		<TextView android:id="@+id/TextView2" 
+		android:textColor="@color/col1" 
+		
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="xxxx" 
+		android:layout_gravity="center_vertical"/>
+
+
+	</LinearLayout>
+	
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1"
+		android:gravity="bottom"
+		>
+		<Button
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="Accept"
+			android:enabled="true"
+			android:id="@+id/add2list"
+			/>
+		<Button
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="Reject"
+			android:enabled="true"
+			android:id="@+id/rmlist"
+			
+			/>
+	</LinearLayout>
+	<!-- 	
+	<LinearLayout
+	android:orientation="horizontal"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:paddingTop="150dip"
+	android:layout_gravity="center_horizontal"
+	>
+	<Button android:text="Button" android:id="@+id/add2list" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+	<Button android:text="Button" android:id="@+id/rmlist" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+	</LinearLayout>
+	 -->
+	
+	<ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:text="@string/hello" /> 
+	
+	
+	
+	
+	<!-- <HorizontalScrollView android:id="@+id/horizontalScrollView1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="match_parent" android:id="@+id/linearLayout2" android:layout_height="match_parent" android:orientation="horizontal">
+			<ImageButton android:layout_height="wrap_content" android:id="@+id/imageButton4" android:src="@drawable/icon" android:layout_width="wrap_content"></ImageButton>
+			<ImageButton android:layout_height="wrap_content" android:id="@+id/imageButton5" android:src="@drawable/icon" android:layout_width="wrap_content"></ImageButton>
+			<ImageButton android:layout_height="wrap_content" android:id="@+id/imageButton6" android:src="@drawable/icon" android:layout_width="wrap_content"></ImageButton>
+			<ImageButton android:layout_height="wrap_content" android:id="@+id/imageButton7" android:src="@drawable/icon" android:layout_width="wrap_content"></ImageButton>
+			<ImageButton android:layout_height="wrap_content" android:id="@+id/imageButton8" android:src="@drawable/icon" android:layout_width="wrap_content"></ImageButton>
+			<ImageButton android:layout_height="wrap_content" android:id="@+id/imageButton9" android:src="@drawable/icon" android:layout_width="wrap_content"></ImageButton>
+		</LinearLayout>
+	</HorizontalScrollView> -->
+</LinearLayout>

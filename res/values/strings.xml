@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, gps_3!</string>
+    <string name="app_name">Field Reporter</string>
+    <string name="app_desc">ASSIGNMENT ACCEPTANCE</string>
+    <string name="app_inout">CHECK IN / CHECK OUT</string>
+    <string name="planets_array1">Work Status</string>
+    <string name="ip">180.151.96.155</string> <!-- 180.151.96.155 -->
+    <string name="start_top">150dip</string>
+    
+    <string-array name="planets_array">
+        <item>Working</item>
+        <item>Finished</item>
+        <item>Pending</item>
+    </string-array>
+    <string-array name="mode_array">
+        <item>Auto</item>
+        <item>Taxi</item>
+        <item>Bus</item>
+    </string-array>
+    <string-array name="equipment_array">
+        <item>Encoder</item>
+        <item>Switch 8 port</item>
+        <item>UPS</item>
+        <item>MCB 6A</item>
+        <item>MCB 2A</item>
+        <item>MCB 10A</item>
+        <item>12V DC Adaptor, 1A</item>
+        <item>24V AC Transformer, 3A</item>
+        <item>Power strip</item>
+        <item>OFC</item>
+        <item>Media converter</item>
+        <item>Power Cable</item>
+        <item>Cat 6 cable</item>
+        <item>RG Cable</item>
+        <item>IP 66 Junction Box</item>
+    </string-array>
+    <style name="DialogWithoutTitle" parent="android:Theme.Dialog">
+    	<item name="android:windowNoTitle">true</item>
+    </style>
+    
+</resources>

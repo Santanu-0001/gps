@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bg_others" android:baselineAligned="false" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout
+  		android:orientation="horizontal"
+ 		android:layout_height="wrap_content"
+ 		android:layout_width="fill_parent" 
+		android:layout_gravity="center_horizontal"
+		android:paddingTop="10dip"
+		android:paddingLeft="10dip"
+		>
+		<TextView 
+		android:text="Reason for rejection" 
+		android:id="@+id/textView1" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:textStyle="bold"
+		android:textSize="6pt"
+		android:textColor="@color/col1"
+		></TextView>
+</LinearLayout>
+<LinearLayout
+  		android:orientation="horizontal"
+ 		android:layout_height="wrap_content"
+ 		android:layout_width="fill_parent" 
+		android:layout_gravity="center_horizontal"
+		android:paddingTop="10dip"
+		android:layout_weight="1"
+		android:paddingLeft="10dip"
+		android:paddingRight="10dip"
+		>
+
+    <EditText
+    android:paddingTop="10dip" 
+    android:layout_width="fill_parent" 
+    android:text="" 
+    android:layout_height="fill_parent" 
+    android:id="@+id/editText1"
+    
+    ></EditText>
+</LinearLayout>    
+	<LinearLayout
+  		android:orientation="horizontal"
+ 		android:layout_height="wrap_content"
+ 		android:layout_width="fill_parent" 
+		android:layout_gravity="center_horizontal"
+		android:paddingLeft="10dip"
+		android:paddingRight="10dip">
+	    <Button 
+	    android:text="Send" 
+	    android:id="@+id/rejSend" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    ></Button>
+<!-- 	<LinearLayout
+  		android:orientation="horizontal"
+ 		android:layout_height="wrap_content"
+ 		android:layout_width="fill_parent" 
+		android:layout_gravity="center_horizontal"
+		android:paddingLeft="20dip">
+ -->	    
+ 		<Button 
+	    android:text="Cancel" 
+	    android:id="@+id/rejCancel" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"></Button>
+	</LinearLayout>
+<!-- </LinearLayout> -->
+</LinearLayout>
